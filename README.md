@@ -1,2 +1,24 @@
-Hi my name is Robin. I am interested in Data Analytics and Science. Welcome to my portfolio where I display data projects I have worked on. 
-You can follow me or contact me via Linkedin. Here is my link: https://www.linkedin.com/in/robin-byimana-r-7636b0197/ 
+# Aspiring Data Analyst
+
+## Summary 
+I am looking to transition into Data Analytics/Science.
+
+## Technical skills
+Python
+SQL
+R
+
+## Education
+BSc, Business Computing       Brunel University London (2018)
+
+### Certificates
+
+Program: Data Science and Machine Learning: Making Data-Driven Decisions
+MIT Schwarzman College of Computing (2022)
+
+## Portfolio Projects
+
+### Personal projects
+Exploratory Data Analysis on Bundelisga data
+
+### Course projects
