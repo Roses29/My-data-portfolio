@@ -15,7 +15,9 @@ Competencies: **Machine learning**, **Python programming**, **Statistics**
 
 ## Technical skills
 -Programming languages: **Python, SQL, R**
+
 -Microsoft Tools: **Excel, Power BI**
+
 -Other Tools and Methodologies: Github, SQL Server Management Studio, Agile
 
 ## Portfolio Projects
