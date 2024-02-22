@@ -1,6 +1,6 @@
-# About Robin
+# Welcome to my portfolio page!
 
-## Summary 
+## About me
 I'm a young professional seeking to transition into a data science career, willing to apply and develop my skills in banking, finance, retail, healthcare, and sports, to cite a few. Welcome to my portfolio page where I showcase independent and course projects I have worked on and the various skills & methods I have used. 
 
 ## Technical skills
