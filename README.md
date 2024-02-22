@@ -22,9 +22,14 @@ Python packages used: Pandas, Numpy, Matplotlib
 
 You can find out more about the project by clicking the following link: https://github.com/Roses29/My-data-portfolio/blob/main/EDA%20Bundesliga%202021-2022.ipynb
 
-2. Data visualization with Power BI
+**2. Data visualization with Power BI**
 
-### Course projects
+I built several dashboards of greenhouse gas (CO2, methane, nitrous oxide) emissions trends over time in my country, Rwanda, and across the world.
+
+Data source: https://ourworldindata.org/co2-and-greenhouse-gas-emissions
+
+Project Link: https://app.powerbi.com/links/zH1t9O2xpU?ctid=ae3f47d1-dd89-43b1-a9b5-f7aadd7b81af&pbi_source=linkShare&bookmarkGuid=9a7325d9-12a9-459b-b74e-979c13e4008d
+
 
 ## Education
 **Business Computing** | Brunel University London | September 2021
