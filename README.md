@@ -14,8 +14,15 @@ I'm a young professional seeking to transition into a data science career, willi
 
 ### Personal projects
 
-1. Exploratory Data Project on Football Dataset
-2. Data Visualization
+**1. Exploratory Data Analysis Project**
+
+I performed exploratory data analysis on a football dataset, one of my passions. I first requested the data from an API provider, cleaned it in Excel, and then imported it into a Jupyter Notebook where I performed data analysis based on questions I developed. 
+
+Python packages used: Pandas, Numpy, Matplotlib
+
+You can find out more about the project by clicking the following link: https://github.com/Roses29/My-data-portfolio/blob/main/EDA%20Bundesliga%202021-2022.ipynb
+
+2. Data visualization with Power BI
 
 ### Course projects
 
