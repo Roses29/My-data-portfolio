@@ -24,11 +24,11 @@ You can find out more about the project by clicking the following link: [EDA Pro
 
 **2. Data visualization with Power BI**
 
-I built several dashboards of greenhouse gas (CO2, methane, nitrous oxide) emissions trends over time in my country, Rwanda, and across the world.
+I built several dashboards of greenhouse gas (CO2, methane, nitrous oxide) emissions trends in my country, Rwanda, and worldwide. I imported data into Power BI from an external source, cleaned and transformed data, and then created various charts. 
 
 Data source: [Our World in Data](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
 
-The project can be accessed [here](<a href="roses29.github.io/My-data-portfolio/VIsualization C02.pdf" target="_blank">PDF.</a>)
+The project can be accessed by clicking on the following link <a href="roses29.github.io/My-data-portfolio/VIsualization C02.pdf" target="_blank">PDF.</a>
 
 
 ## Education
