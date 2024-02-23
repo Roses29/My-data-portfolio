@@ -28,7 +28,7 @@ I built several dashboards of greenhouse gas (CO2, methane, nitrous oxide) emiss
 
 Data source: [Our World in Data](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
 
-Project Link: https://app.powerbi.com/links/zH1t9O2xpU?ctid=ae3f47d1-dd89-43b1-a9b5-f7aadd7b81af&pbi_source=linkShare&bookmarkGuid=9a7325d9-12a9-459b-b74e-979c13e4008d
+The project can be accessed [here](<a href="roses29.github.io/My-data-portfolio/VIsualization C02.pdf" target="_blank">PDF.</a>)
 
 
 ## Education
