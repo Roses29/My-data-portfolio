@@ -28,7 +28,7 @@ Built several dashboards of greenhouse gas (CO2, methane, nitrous oxide) emissio
 
 Data source: [Our World in Data](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
 
-The project can be accessed by clicking on the following link <a href="My-data-portfolio/VIsualization CO2.pdf" target="_blank">PDF.</a>
+The project can be accessed by clicking on the following link: (https://roses29.github.io/my-data-portfolio/VIsualization CO2.pdf)
 
 ### Course projects (from MIT's Data Science and Machine Learning online course)
 
