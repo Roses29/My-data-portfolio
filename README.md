@@ -55,7 +55,7 @@ Objectives:
 
  Marks obtained:40/40
 
- Link to full project and code: [Hotel Booking Cancellation Prediction](ithub.com/Roses29/My-data-portfolio/blob/main/CHT_Graded_Project_Learner_Notebook.ipynb)
+ Link to full project and code: [Hotel Booking Cancellation Prediction](github.com/Roses29/My-data-portfolio/blob/main/CHT_Graded_Project_Learner_Notebook.ipynb)
 
 **3.Movie recommendation system**
 
