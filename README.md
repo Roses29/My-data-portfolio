@@ -40,7 +40,7 @@ The project can be accessed by clicking on the following link <a href="My-data-p
 
  Marks obtained:38.5/40
 
- Link to full project and code:[Pima Diabetes Analysis](https://github.com/Roses29/My-data-portfolio/blob/main/Pima-Diabetes-Analysis-Robin-Rubangura.ipynb) 
+ Link to full project and code: [Pima Diabetes Analysis](https://github.com/Roses29/My-data-portfolio/blob/main/Pima-Diabetes-Analysis-Robin-Rubangura.ipynb) 
 
 **2.Hotel booking Cancellation Prediction**
 
@@ -50,22 +50,24 @@ Objectives:
 - Giving recommendations to hotels to assist them in formulating profitable policies for cancellations and refunds.
 
  Python packages used: Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn
+ 
  Machine Learning models used: Logistic regression, Decision Tree, Support Vector Machine, Random Forest
 
  Marks obtained:40/40
 
- Link to full project and code:[Hotel Booking Cancellation Prediction](ithub.com/Roses29/My-data-portfolio/blob/main/CHT_Graded_Project_Learner_Notebook.ipynb)
+ Link to full project and code: [Hotel Booking Cancellation Prediction](ithub.com/Roses29/My-data-portfolio/blob/main/CHT_Graded_Project_Learner_Notebook.ipynb)
 
 **3.Movie recommendation system**
 
 Objective: Building recommendation systems such as Rank-based & Collaborative Filtering-based to recommend movies to users.
 
 Python packages used: Pandas, Numpy, Matplotlib, Seaborn, Collections, Surprise
+
 Machine Learning models used: KNN, SVD
 
 Marks obtained:40/40
 
-Link to full project and code:[Movie recommendation system](github.com/Roses29/My-data-portfolio/blob/main/RobinRubangura_Recommendation%20Systems.ipynb)
+Link to full project and code: [Movie recommendation system](github.com/Roses29/My-data-portfolio/blob/main/RobinRubangura_Recommendation%20Systems.ipynb)
 
 
 ## Education
