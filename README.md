@@ -8,7 +8,7 @@ I'm a young professional seeking to transition into a data analytuics career, wi
 
 -Microsoft Tools: **Excel, Power BI**
 
--Other Tools and Methodologies: **Github, SQL Server Management Studio, Agile**
+-Other Tools and Methodologies: **Github, SQL Server Management Studio**
 
 ## Portfolio Projects
 
@@ -28,7 +28,9 @@ B. Retail sales
 
 Performed data cleaning, transformation and analysis on a dirty retail store dataset from Kaggle. 
 
-Full project can be found here: 
+Python packages used: Pandas, Matplotlib, Seaborn
+
+Full project can be found here:
 
 
 **2. Data visualization with Power BI**
@@ -69,11 +71,11 @@ Link to full project and code: [Movie recommendation system]()
 
 **Business Analytics MSc** | Neoma Business School | Present
 
-Key modules: Applied Business Analytics (Excel-focused), Python and R Programming, Business Simulation, 
+Key modules: Applied Business Analytics (Excel-focused), Python and R Programming, Business Simulation, Entreprise Data Management, Data visualization
 
 **Business Computing BSc** | Brunel University London | September 2021
 
-Key modules: Data & Information, Programming, Software Project Management, Business Analysis and Process Modelling, Software Dev & Management
+Key modules: Data & Information, Software Development & Management, Business Analysis and Process Modelling, E-business, Software Project Management
 
 ### Certificates
 **Data Science and Machine Learning: Making Data-Driven Decisions** | MIT Schwarzman College of Computing | November 2022
