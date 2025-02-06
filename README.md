@@ -1,7 +1,7 @@
 # Welcome to my portfolio page!
 
 ## About me
-I'm a young professional seeking to transition into a data science career, willing to apply and develop my skills in banking, finance, retail, healthcare, and sports, to cite a few. Welcome to my portfolio page where I showcase independent and course projects I have worked on and the various skills & methods I have used. 
+I'm a young professional seeking to transition into a data analytuics career, willing to apply and develop my skills in banking, finance, retail, healthcare, and sports, to name a few. Below, you can find my portfolio page where I showcase independent and course projects I have worked on along with the tools and libraries I have used.
 
 ## Technical skills
 -Programming languages: **Python, SQL, R**
@@ -14,13 +14,22 @@ I'm a young professional seeking to transition into a data science career, willi
 
 ### Personal projects
 
-**1. Exploratory Data Analysis Project**
+**1. Exploratory Data Analysis Projects**
 
-Performed exploratory data analysis on a football dataset based on questions I developed. Requested the data from an API provider, cleaned it in Excel, and then imported it into a Jupyter Notebook. 
+A. Football Dataset 
+
+Performed exploratory data analysis on a football and dataset based on questions I developed. Requested the data from an API provider, imported and cleaned it in Excel, and did further cleaning and analysis in Jupyter Notebook. 
 
 Python packages used: Pandas, Numpy, Matplotlib
 
 You can find out more about the project by clicking the following link: [EDA Project Bundesliga](https://github.com/Roses29/My-data-portfolio/blob/main/EDA%20Bundesliga%202021-2022.ipynb)
+
+B. Retail sales 
+
+Performed data cleaning, transformation and analysis on a dirty retail store dataset from Kaggle. 
+
+Full project can be found here: 
+
 
 **2. Data visualization with Power BI**
 
@@ -32,17 +41,7 @@ Project Link: [Greenhouses gases emission in Rwanda](https://github.com/Roses29/
 
 ### Course projects (from MIT's Data Science and Machine Learning online course)
 
-**1. Pima Diabetes Analysis**
-
- Objective: to analyze the different aspects of Diabetes in the Pima Indian tribe by performing Exploratory Data analysis.
-
- Python packages used: Pandas, Numpy, Matplotlib, Seaborn
-
- Marks obtained:38.5/40
-
- Link to full project and code: [Pima Diabetes Analysis](https://github.com/Roses29/My-data-portfolio/blob/main/Pima-Diabetes-Analysis-Robin-Rubangura.ipynb) 
-
-**2.Hotel booking Cancellation Prediction**
+**1.Hotel booking Cancellation Prediction**
 
 Objectives:
 - Analyzing data to identify the main factors that influence hotel booking cancellations.
@@ -53,11 +52,9 @@ Objectives:
  
  Machine Learning models used: Logistic regression, Decision Tree, Support Vector Machine, Random Forest
 
- Marks obtained:40/40
+ Link to full project and code: [Hotel Booking Cancellation Prediction]()
 
- Link to full project and code: [Hotel Booking Cancellation Prediction](github.com/Roses29/My-data-portfolio/blob/main/CHT_Graded_Project_Learner_Notebook.ipynb)
-
-**3.Movie recommendation system**
+**2.Movie recommendation system**
 
 Objective: Building recommendation systems such as Rank-based & Collaborative Filtering-based to recommend movies to users.
 
@@ -65,12 +62,15 @@ Python packages used: Pandas, Numpy, Matplotlib, Seaborn, Collections, Surprise
 
 Machine Learning models used: KNN, SVD
 
-Marks obtained:40/40
-
-Link to full project and code: [Movie recommendation system](github.com/Roses29/My-data-portfolio/blob/main/RobinRubangura_Recommendation%20Systems.ipynb)
+Link to full project and code: [Movie recommendation system]()
 
 
 ## Education
+
+**Business Analytics MSc** | Neoma Business School | Present
+
+Key modules: Applied Business Analytics (Excel-focused), Python and R Programming, Business Simulation, 
+
 **Business Computing BSc** | Brunel University London | September 2021
 
 Key modules: Data & Information, Programming, Software Project Management, Business Analysis and Process Modelling, Software Dev & Management
@@ -78,4 +78,4 @@ Key modules: Data & Information, Programming, Software Project Management, Busin
 ### Certificates
 **Data Science and Machine Learning: Making Data-Driven Decisions** | MIT Schwarzman College of Computing | November 2022
 
-Competencies: **Machine learning**, **Python programming**, **Statistics**
+Competencies: **Machine and Deep learning**, **Python programming**, **Statistics**
