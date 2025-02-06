@@ -2,7 +2,7 @@ title: Robin R.
 
 logo:  # Use a relative path to logo image 
 
-description: Freelancer|Data Analytics 
+description: MSc Student| Pqssionate about data
 
 show_downloads: true # Fix spelling
 
@@ -11,4 +11,4 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-seo-tag # Add SEO plugin
 
-email: robinrubangura@gmail.com
+email: robinrubangura21@gmail.com
