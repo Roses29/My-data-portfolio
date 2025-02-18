@@ -1,7 +1,6 @@
 title: Robin B. Rubangura
-
-logo:  DIG734_reduced.JPG
-
-
+description: Welcome to my portfolio page!
+show_downloads: false
+google_analytics:
 theme: jekyll-theme-slate
 
