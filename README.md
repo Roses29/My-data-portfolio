@@ -1,4 +1,3 @@
-# Welcome to my portfolio page!
 
 ## About me
 I'm a young talent currently pursuing a MSc about Business Analytics and seeking to transition into the field. Below, you can access various projects in which I showcase my skills in Python and Power BI.
@@ -14,7 +13,7 @@ I'm a young talent currently pursuing a MSc about Business Analytics and seeking
 
 **1. Exploratory Data Analysis Projects**
 
-#### Retail sales 
+**Retail sales** 
 
 Project in which I cleaned, transformed and analyzed a dirty retail store dataset from Kaggle. 
 
@@ -22,7 +21,7 @@ Python packages used: Pandas, Matplotlib, Seaborn
 
 Full project and code can be found here: [Retail Sales Analysis](https://github.com/Roses29/My-data-portfolio/blob/main/Python_Project_Rubangura_Robin.ipynb)
 
-#### Football Dataset 
+**Football Dataset**
 
 Project in which I performed exploratory data analysis on a football dataset based on questions I developed. Requested the data from an API provider, imported and cleaned it in Excel, and did further cleaning and analysis in Jupyter Notebook. 
 
