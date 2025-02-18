@@ -66,9 +66,9 @@ Project Link: [Greenhouses gases emission in Rwanda](https://github.com/Roses29/
 
 ## Education
 
-**Business Analytics MSc** | Neoma Business School | Present
+**Business Analytics MSc** - Neoma Business School - Present
 
-**Business Computing BSc** | Brunel University London | September 2021
+**Business Computing BSc** - Brunel University London - September 2021
 
 ### Certificates
 **Data Science and Machine Learning: Making Data-Driven Decisions** | MIT Schwarzman College of Computing | November 2022
