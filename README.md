@@ -69,7 +69,7 @@ Project Link: [Greenhouses gases emission in Rwanda](https://github.com/Roses29/
 
 **Business Computing BSc** - Brunel University London - September 2021
 
-### Certificates
+## Certifications
 **Data Science and Machine Learning: Making Data-Driven Decisions** | MIT Schwarzman College of Computing | November 2022
 
 Competencies: **Machine and Deep learning**, **Python programming**, **Statistics**
