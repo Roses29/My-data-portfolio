@@ -20,7 +20,7 @@ Project in which I cleaned, transformed and analyzed a dirty retail store datase
 
 Python packages used: Pandas, Matplotlib, Seaborn
 
-Full project and code can be found here:
+Full project and code can be found here: [Retail Sales Analysis](https://github.com/Roses29/My-data-portfolio/blob/main/Python_Project_Rubangura_Robin.ipynb)
 
 #### Football Dataset 
 
@@ -43,7 +43,8 @@ Course project with the following bbjectives:
  
  Machine Learning models used: Logistic regression, Decision Tree, Support Vector Machine, Random Forest
 
- Link to full project and code: [Hotel Booking Cancellation Prediction]()
+ Link to full project and code: [Hotel Booking Cancellation Prediction](https://github.com/Roses29/My-data-portfolio/blob/main/CHT_Graded_Project_Learner_Notebook.ipynb
+)
 
 **3.Movie recommendation system**
 
@@ -53,7 +54,7 @@ Python packages used: Pandas, Numpy, Matplotlib, Seaborn, Collections, Surprise
 
 Machine Learning models used: KNN, SVD
 
-Link to full project and code: [Movie recommendation system]()
+Link to full project and code: [Movie recommendation system](https://github.com/Roses29/My-data-portfolio/blob/main/RobinRubangura_Recommendation%20Systems.ipynb)
 
 ### Greenhouses gases emissions visualization with Power BI
 
