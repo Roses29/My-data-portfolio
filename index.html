@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robin B. Rubangura — Data Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --surface: #121828;
+      --card: #1a2236;
+      --border: #2a3652;
+      --accent: #4fffb0;
+      --accent2: #4dc9ff;
+      --accent3: #ff9f4a;
+      --text: #e8edf5;
+      --muted: #8899bb;
+      --heading-font: 'DM Serif Display', serif;
+      --body-font: 'Outfit', sans-serif;
+      --mono-font: 'DM Mono', monospace;
+      /* skill colors */
+      --python: #4fffb0;
+      --powerbi: #f2c811;
+      --sql: #4dc9ff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(79,255,176,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79,255,176,0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.25rem 3rem;
+      background: rgba(11,15,26,0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { font-family: var(--mono-font); font-size: 0.85rem; color: var(--accent); letter-spacing: 0.05em; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-family: var(--mono-font); font-size: 0.78rem; color: var(--muted); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* HERO */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 8rem 3rem 5rem; overflow: hidden;
+    }
+    .hero-glow { position: absolute; top: -20%; right: -10%; width: 700px; height: 700px; background: radial-gradient(circle, rgba(79,255,176,0.12) 0%, transparent 65%); pointer-events: none; }
+    .hero-glow2 { position: absolute; bottom: -20%; left: -5%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(77,201,255,0.08) 0%, transparent 65%); pointer-events: none; }
+    .hero-content { position: relative; max-width: 900px; }
+    .hero-tag {
+      font-family: var(--mono-font); font-size: 0.8rem; color: var(--accent);
+      letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .hero-tag::before { content: ''; display: inline-block; width: 40px; height: 1px; background: var(--accent); }
+    .hero h1 { font-family: var(--heading-font); font-size: clamp(3rem, 7vw, 6rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+    .hero h1 em { font-style: italic; color: var(--accent); }
+    .hero-desc { font-size: 1.15rem; color: var(--muted); max-width: 560px; margin-bottom: 2.5rem; line-height: 1.8; }
+    .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn { font-family: var(--mono-font); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; padding: 0.85rem 2rem; border-radius: 2px; transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-primary { background: var(--accent); color: #0b0f1a; font-weight: 500; }
+    .btn-primary:hover { background: #2de89a; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(79,255,176,0.3); }
+    .btn-ghost { border: 1px solid var(--border); color: var(--muted); }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* SKILLS STRIP */
+    .skills-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.5rem 3rem; display: flex; gap: 1.5rem; flex-wrap: wrap; background: var(--surface); }
+    .skill-pill { font-family: var(--mono-font); font-size: 0.75rem; padding: 0.4rem 1rem; border: 1px solid var(--border); border-radius: 100px; color: var(--muted); letter-spacing: 0.05em; transition: all 0.2s; }
+    .skill-pill:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* MAIN */
+    main { position: relative; max-width: 1100px; margin: 0 auto; padding: 5rem 3rem; z-index: 1; }
+    section { margin-bottom: 6rem; }
+
+    .section-label { font-family: var(--mono-font); font-size: 0.75rem; color: var(--accent); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.75rem; }
+    .section-title { font-family: var(--heading-font); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 3rem; line-height: 1.1; }
+
+    /* ABOUT */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .about-text { font-size: 1.05rem; color: var(--muted); line-height: 1.9; }
+    .about-text strong { color: var(--text); font-weight: 500; }
+    .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; border: 1px solid var(--border); background: var(--border); }
+    .stat-box { background: var(--card); padding: 2rem; text-align: center; }
+    .stat-number { font-family: var(--heading-font); font-size: 2.8rem; color: var(--accent); display: block; line-height: 1; margin-bottom: 0.5rem; }
+    .stat-label { font-family: var(--mono-font); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+
+    /* ─── SKILL BLOCK (Python / SQL / Power BI groupings) ─── */
+    .skill-block { margin-bottom: 4rem; }
+
+    .skill-block-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .skill-block-icon {
+      font-size: 1.5rem;
+      width: 46px; height: 46px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .skill-block-icon.python { background: rgba(79,255,176,0.1); }
+    .skill-block-icon.sql    { background: rgba(77,201,255,0.1); }
+    .skill-block-icon.powerbi { background: rgba(242,200,17,0.1); }
+
+    .skill-block-name {
+      font-family: var(--heading-font);
+      font-size: 1.8rem;
+    }
+
+    .skill-block-name.python  { color: var(--python); }
+    .skill-block-name.sql     { color: var(--sql); }
+    .skill-block-name.powerbi { color: var(--powerbi); }
+
+    /* ─── SUBSECTION (Data Analytics / Data Science) ─── */
+    .subsection { margin-bottom: 2.5rem; }
+
+    .subsection-label {
+      font-family: var(--mono-font);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 100px;
+      display: inline-block;
+      margin-bottom: 1.25rem;
+    }
+
+    .subsection-label.analytics {
+      background: rgba(79,255,176,0.08);
+      border: 1px solid rgba(79,255,176,0.25);
+      color: var(--python);
+    }
+
+    .subsection-label.datascience {
+      background: rgba(255,159,74,0.08);
+      border: 1px solid rgba(255,159,74,0.25);
+      color: var(--accent3);
+    }
+
+    /* PROJECT CARDS */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+
+    .project-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 4px;
+      padding: 1.75rem; text-decoration: none; color: var(--text);
+      display: flex; flex-direction: column; gap: 0.85rem;
+      transition: all 0.25s; position: relative; overflow: hidden;
+    }
+    .project-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    }
+    .project-card.python-card::before  { background: linear-gradient(90deg, var(--python), var(--accent2)); }
+    .project-card.sql-card::before     { background: linear-gradient(90deg, var(--sql), #a78bfa); }
+    .project-card.powerbi-card::before { background: linear-gradient(90deg, var(--powerbi), var(--accent3)); }
+
+    .project-card:hover { border-color: rgba(79,255,176,0.25); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+    .project-card:hover::before { transform: scaleX(1); }
+
+    .project-type { font-family: var(--mono-font); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; }
+    .python-card .project-type  { color: var(--python); }
+    .sql-card .project-type     { color: var(--sql); }
+    .powerbi-card .project-type { color: var(--powerbi); }
+
+    .project-title { font-family: var(--heading-font); font-size: 1.25rem; line-height: 1.25; }
+    .project-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.7; flex: 1; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+    .tag { font-family: var(--mono-font); font-size: 0.68rem; padding: 0.25rem 0.65rem; border-radius: 2px; }
+    .python-card .tag  { background: rgba(79,255,176,0.07);  border: 1px solid rgba(79,255,176,0.2);  color: var(--python); }
+    .sql-card .tag     { background: rgba(77,201,255,0.07);  border: 1px solid rgba(77,201,255,0.2);  color: var(--sql); }
+    .powerbi-card .tag { background: rgba(242,200,17,0.07);  border: 1px solid rgba(242,200,17,0.2);  color: var(--powerbi); }
+
+    .project-arrow { font-size: 1.1rem; color: var(--muted); align-self: flex-end; transition: transform 0.2s, color 0.2s; }
+    .project-card:hover .project-arrow { transform: translate(3px,-3px); color: var(--accent); }
+
+    /* Featured Power BI card */
+    .project-card.featured { grid-column: 1/-1; flex-direction: row; align-items: center; gap: 2.5rem; }
+    .featured-icon { font-size: 3.5rem; flex-shrink: 0; }
+    .featured-content { flex: 1; }
+
+    /* TIMELINE */
+    .timeline { display: flex; flex-direction: column; gap: 0; border-left: 1px solid var(--border); padding-left: 2rem; margin-left: 1rem; }
+    .timeline-item { position: relative; padding-bottom: 2.5rem; }
+    .timeline-item::before { content: ''; position: absolute; left: -2.4rem; top: 0.4rem; width: 10px; height: 10px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 12px rgba(79,255,176,0.5); }
+    .timeline-date { font-family: var(--mono-font); font-size: 0.75rem; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .timeline-title { font-family: var(--heading-font); font-size: 1.2rem; margin-bottom: 0.2rem; }
+    .timeline-sub { font-size: 0.9rem; color: var(--muted); }
+
+    .cert-card { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent2); padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 2px; }
+    .cert-title { font-weight: 500; margin-bottom: 0.25rem; }
+    .cert-meta { font-family: var(--mono-font); font-size: 0.78rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 2.5rem 3rem; display: flex; justify-content: space-between; align-items: center; font-family: var(--mono-font); font-size: 0.78rem; color: var(--muted); }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    .hero-content > * { animation: fadeUp 0.7s ease both; }
+    .hero-tag  { animation-delay: 0.1s; }
+    .hero h1   { animation-delay: 0.25s; }
+    .hero-desc { animation-delay: 0.4s; }
+    .hero-cta  { animation-delay: 0.55s; }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .hero { padding: 7rem 1.5rem 4rem; }
+      main { padding: 4rem 1.5rem; }
+      .about-grid { grid-template-columns: 1fr; }
+      .project-card.featured { flex-direction: column; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">rbr.dev</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="https://github.com/Roses29" target="_blank">GitHub ↗</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Data Analyst & ML Practitioner</div>
+      <h1>Robin B.<br/><em>Rubangura</em></h1>
+      <p class="hero-desc">
+        MSc Business Analytics student turning raw data into actionable insight — through Python, Power BI, and a sharp eye for patterns that matter.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="https://github.com/Roses29/My-data-portfolio" target="_blank" class="btn btn-ghost">GitHub Repository</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="skills-strip">
+    <span class="skill-pill">Python</span>
+    <span class="skill-pill">SQL</span>
+    <span class="skill-pill">R</span>
+    <span class="skill-pill">Power BI</span>
+    <span class="skill-pill">Excel</span>
+    <span class="skill-pill">Pandas</span>
+    <span class="skill-pill">Scikit-learn</span>
+    <span class="skill-pill">Matplotlib</span>
+    <span class="skill-pill">Seaborn</span>
+    <span class="skill-pill">Machine Learning</span>
+  </div>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">// 01 — About</div>
+      <h2 class="section-title">The Person<br/>Behind the Data</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a <strong>young data talent</strong> currently pursuing an <strong>MSc in Business Analytics</strong> at Neoma Business School, seeking to transition into the data field full-time.<br/><br/>
+          My work spans <strong>exploratory data analysis</strong>, <strong>predictive modelling</strong>, and <strong>data visualisation</strong> — always with the goal of making complex datasets tell clear, compelling stories.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-box"><span class="stat-number">5+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-box"><span class="stat-number">3</span><span class="stat-label">Languages</span></div>
+          <div class="stat-box"><span class="stat-number">MIT</span><span class="stat-label">Certified</span></div>
+          <div class="stat-box"><span class="stat-number">MSc</span><span class="stat-label">In Progress</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label">// 02 — Projects</div>
+      <h2 class="section-title">Portfolio<br/>Projects</h2>
+
+      <!-- ══ PYTHON ══ -->
+      <div class="skill-block">
+        <div class="skill-block-header">
+          <div class="skill-block-icon python">🐍</div>
+          <div class="skill-block-name python">Python</div>
+        </div>
+
+        <!-- Sub: Data Analytics -->
+        <div class="subsection">
+          <span class="subsection-label analytics">Data Analytics</span>
+          <div class="projects-grid">
+
+            <a class="project-card python-card" href="https://github.com/Roses29/My-data-portfolio/blob/main/Python_Project_Rubangura_Robin.ipynb" target="_blank">
+              <div class="project-type">Python · EDA</div>
+              <div class="project-title">Retail Sales Analysis</div>
+              <p class="project-desc">Cleaned, transformed and analysed a dirty retail dataset from Kaggle, surfacing key sales patterns and trends.</p>
+              <div class="project-tags">
+                <span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+              </div>
+              <div class="project-arrow">↗</div>
+            </a>
+
+            <a class="project-card python-card" href="https://github.com/Roses29/My-data-portfolio/blob/main/EDA%20Bundesliga%202021-2022.ipynb" target="_blank">
+              <div class="project-type">Python · EDA · API</div>
+              <div class="project-title">Bundesliga EDA (2021–22)</div>
+              <p class="project-desc">Requested football data from an API provider, cleaned in Excel, then performed deep exploratory analysis in Jupyter Notebook based on self-formulated questions.</p>
+              <div class="project-tags">
+                <span class="tag">Pandas</span><span class="tag">Numpy</span><span class="tag">API</span><span class="tag">Matplotlib</span>
+              </div>
+              <div class="project-arrow">↗</div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Sub: Data Science -->
+        <div class="subsection">
+          <span class="subsection-label datascience">Data Science</span>
+          <div class="projects-grid">
+
+            <a class="project-card python-card" href="https://github.com/Roses29/My-data-portfolio/blob/main/CHT_Graded_Project_Learner_Notebook.ipynb" target="_blank">
+              <div class="project-type">Python · Machine Learning</div>
+              <div class="project-title">Hotel Booking Cancellation Prediction</div>
+              <p class="project-desc">Identified cancellation drivers and built predictive models — Logistic Regression, Decision Tree, SVM, and Random Forest — with business recommendations for hotels.</p>
+              <div class="project-tags">
+                <span class="tag">Scikit-learn</span><span class="tag">Random Forest</span><span class="tag">SVM</span><span class="tag">Seaborn</span>
+              </div>
+              <div class="project-arrow">↗</div>
+            </a>
+
+            <a class="project-card python-card" href="https://github.com/Roses29/My-data-portfolio/blob/main/RobinRubangura_Recommendation%20Systems.ipynb" target="_blank">
+              <div class="project-type">Python · Recommender Systems</div>
+              <div class="project-title">Movie Recommendation System</div>
+              <p class="project-desc">Built rank-based and collaborative filtering recommendation systems using KNN and SVD matrix factorisation to personalise movie suggestions.</p>
+              <div class="project-tags">
+                <span class="tag">Surprise</span><span class="tag">KNN</span><span class="tag">SVD</span><span class="tag">Collaborative Filtering</span>
+              </div>
+              <div class="project-arrow">↗</div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ SQL ══ -->
+      <div class="skill-block">
+        <div class="skill-block-header">
+          <div class="skill-block-icon sql">🗄️</div>
+          <div class="skill-block-name sql">SQL</div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card sql-card" style="cursor:default; opacity:0.6;">
+            <div class="project-type">SQL · Coming Soon</div>
+            <div class="project-title">Projects in progress</div>
+            <p class="project-desc">SQL projects will be added here shortly. Stay tuned for database querying and analysis work.</p>
+            <div class="project-arrow" style="opacity:0.3">⏳</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ POWER BI ══ -->
+      <div class="skill-block">
+        <div class="skill-block-header">
+          <div class="skill-block-icon powerbi">📊</div>
+          <div class="skill-block-name powerbi">Power BI</div>
+        </div>
+        <div class="projects-grid">
+          <a class="project-card powerbi-card featured" href="https://github.com/Roses29/My-data-portfolio/blob/main/VIsualization%20C02.pdf" target="_blank">
+            <div class="featured-icon">🌍</div>
+            <div class="featured-content">
+              <div class="project-type">Power BI · Data Visualisation</div>
+              <div class="project-title">Greenhouse Gas Emissions Dashboard</div>
+              <p class="project-desc">Multi-dashboard report on CO₂, methane, and nitrous oxide emission trends in Rwanda and worldwide. Data imported, cleaned, and visualised with multiple chart types across Power BI.</p>
+              <div class="project-tags">
+                <span class="tag">Power BI</span><span class="tag">Data Cleaning</span><span class="tag">CO₂ Emissions</span><span class="tag">Our World in Data</span>
+              </div>
+            </div>
+            <div class="project-arrow">↗</div>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="section-label">// 03 — Education</div>
+      <h2 class="section-title">Academic<br/>Background</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Present</div>
+          <div class="timeline-title">MSc Business Analytics</div>
+          <div class="timeline-sub">Neoma Business School</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">September 2021</div>
+          <div class="timeline-title">BSc Business Computing</div>
+          <div class="timeline-sub">Brunel University London</div>
+        </div>
+      </div>
+      <br/><br/>
+      <div class="section-label">// Certifications</div>
+      <div class="cert-card">
+        <div class="cert-title">Data Science and Machine Learning: Making Data-Driven Decisions</div>
+        <div class="cert-meta">
+          <span>MIT Schwarzman College of Computing</span>
+          <span>November 2022</span>
+        </div>
+        <div class="project-tags" style="margin-top:0.75rem;">
+          <span class="tag" style="background:rgba(79,255,176,0.07);border:1px solid rgba(79,255,176,0.2);color:var(--python)">Machine Learning</span>
+          <span class="tag" style="background:rgba(79,255,176,0.07);border:1px solid rgba(79,255,176,0.2);color:var(--python)">Deep Learning</span>
+          <span class="tag" style="background:rgba(79,255,176,0.07);border:1px solid rgba(79,255,176,0.2);color:var(--python)">Python</span>
+          <span class="tag" style="background:rgba(79,255,176,0.07);border:1px solid rgba(79,255,176,0.2);color:var(--python)">Statistics</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Robin B. Rubangura — maintained by <a href="https://github.com/Roses29" target="_blank">Roses29</a></span>
+    <span>Published with <a href="https://pages.github.com" target="_blank">GitHub Pages</a></span>
+  </footer>
+
+</body>
+</html>
